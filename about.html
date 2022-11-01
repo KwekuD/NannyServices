@@ -1,7 +1,4 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
--->
+
 <!doctype html>
 <html lang="zxx">
 
@@ -17,6 +14,86 @@ Author URL: http://w3layouts.com
 	<!-- Template CSS -->
 	<link href="//fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700&display=swap" rel="stylesheet">
 	<!-- Template CSS -->
+	<!--Style for modal popup-->
+	<style>
+		/* The Modal (background) */
+.qrst_modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.qrst_modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.qrst_close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.qrst_close:hover,
+.qrst_close:focus {
+    color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.klmn_modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.klmn_modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.klmn_close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.klmn_close:hover,
+.klmn_close:focus {
+    color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+}
+	</style>
 </head>
 
 <body>
@@ -41,7 +118,7 @@ Author URL: http://w3layouts.com
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-					<ul class="navbar-nav ml-auto">
+					<ul class="navbar-nav ml-auto" >
 						<li class="nav-item active">
 							<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 						</li>
@@ -59,9 +136,10 @@ Author URL: http://w3layouts.com
 							<a class="nav-link" href="contact.html"></a>
 						</li>
 						<li class="nav-item ml-lg-4">
-							<a class="nav-link donate btn btn-style" href="donate.html">Sign up</a>
+							<a class="nav-link donate btn btn-style" href="sign.html">Sign up</a>
 						</li>
 					</ul>
+					
 				</div>
 			</nav>
 		</div>
@@ -89,7 +167,16 @@ Author URL: http://w3layouts.com
 							ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur
 							adipisicing
 							elit.fugiat consequatur voluptatem nihil ad.</p>
-						<a href="about.html" class="btn btn-style btn-primary mt-4">Read More</a>
+						<a href="#" id="KSizeChart" class="btn btn-style btn-primary mt-4">Read More</a>
+						<div id="KSizeChartModal" class="klmn_modal">
+
+							<div class="klmn_modal-content">
+							  <span class="klmn_close">&times;</span>
+							  <p>Some text in the Modal..</p>
+							</div>
+						  
+						</div>
+
 					</div>
 					<div class="col-lg-6 mt-5 about-right-faq align-self order2">
 						<div class="title-content text-left mb-2">
@@ -101,7 +188,15 @@ Author URL: http://w3layouts.com
 							ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur
 							adipisicing
 							elit.fugiat consequatur voluptatem nihil ad.</p>
-						<a href="about.html" class="btn btn-style btn-primary mt-4">Read More</a>
+						<a href="#" id="QSizeChart" class="btn btn-style btn-primary mt-4">Read More</a>
+						<div id="QSizeChartModal" class="qrst_modal">
+
+							<div class="qrst_modal-content">
+							  <span class="qrst_close">&times;</span>
+							  <p>Some text in the Modal..</p>
+							</div>
+						  
+						  </div>
 					</div>
 					<div class="col-lg-6 mt-5 pl-lg-4">
 						<img src="assets/images/ab2.jpg" alt="" class="img-fluid">
@@ -431,12 +526,66 @@ Author URL: http://w3layouts.com
 				}
 
 				// When the user clicks on the button, scroll to the top of the document
-				function topFunction() {
-					document.body.scrollTop = 0;
-					document.documentElement.scrollTop = 0;
+			 	function topFunction() {
+			 		document.body.scrollTop = 0;
+			 		document.documentElement.scrollTop = 0;
+				}
+		 	</script>
+			<!-- /move top -->
+			<script>
+				// Get the modal
+				var QrModal = document.getElementById('QSizeChartModal');
+
+				// Get the button that opens the modal
+				var QrBtn = document.getElementById("QSizeChart");
+
+				// Get the <span> element that closes the modal
+				var QrSpan = document.getElementsByClassName("qrst_close")[0];
+
+				// When the user clicks the button, open the modal 
+				QrBtn.onclick = function() {
+    				QrModal.style.display = "block";
+				}
+
+				// When the user clicks on <span> (x), close the modal
+				QrSpan.onclick = function() {
+    				QrModal.style.display = "none";
+				}
+
+				// When the user clicks anywhere outside of the modal, close it	
+				window.onclick = function(event) {
+    				if (event.target == QrModal) {
+        				QrModal.style.display = "none";
+    				}
 				}
 			</script>
-			<!-- /move top -->
+			<script>
+				// Get the modal
+				var klModal = document.getElementById('KSizeChartModal');
+
+				// Get the button that opens the modal
+				var klBtn = document.getElementById("KSizeChart");
+
+				// Get the <span> element that closes the modal
+				var klSpan = document.getElementsByClassName("klmn_close")[0];
+
+				// When the user clicks the button, open the modal 
+				klBtn.onclick = function() {
+    				klModal.style.display = "block";
+				}
+
+				// When the user clicks on <span> (x), close the modal
+				klSpan.onclick = function() {
+    				klModal.style.display = "none";
+				}
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+    				if (event.target == klModal) {
+       					klModal.style.display = "none";
+    					}
+				}
+			</script>
 
 		</section>
 	</footer>
