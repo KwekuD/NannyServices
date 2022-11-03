@@ -14761,7 +14761,7 @@ nav ul li a:hover {
 }
 
 .w3l-main-slider .banner-view {
-  background: url(../images/banner1.jpg) no-repeat center;
+  background: url(../images/nam1.jpg) no-repeat center;
   background-size: cover;
   min-height: calc(100vh - 30px);
   position: relative;
@@ -14771,17 +14771,17 @@ nav ul li a:hover {
 }
 
 .w3l-main-slider .banner-top1 {
-  background: url(../images/banner2.jpg) no-repeat center;
+  background: url(../images/database.jpg) no-repeat center;
   background-size: cover;
 }
 
 .w3l-main-slider .banner-top2 {
-  background: url(../images/banner3.jpg) no-repeat center;
+  background: url(../images/adult\ care.jpg) no-repeat center;
   background-size: cover;
 }
 
 .w3l-main-slider .banner-top3 {
-  background: url(../images/banner4.jpg) no-repeat center;
+  background: url(../images/Train\ us.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -15915,7 +15915,7 @@ button.owl-next {
 }
 
 .w3l-bottom-grids .bottomhny-1-img {
-  background: url(../images/banner4.jpg) no-repeat top;
+  background: url(../images/screening.jpg) no-repeat top;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -15973,7 +15973,7 @@ button.owl-next {
 /*--//bottom-grids--*/
 /*--/middle--*/
 .middle {
-  background: url(../images/banner3.jpg) no-repeat top;
+  background: url(../images/Workforce2.jpg) no-repeat top;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -16206,6 +16206,7 @@ button.owl-next {
   position: relative;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   cursor: default;
+  object-fit: contain;
 }
 
 .ch-info-wrap,
@@ -16214,6 +16215,7 @@ button.owl-next {
   width: 180px;
   height: 180px;
   border-radius: 50%;
+  object-fit: contain;
 }
 
 .ch-info-wrap {
@@ -16272,19 +16274,19 @@ button.owl-next {
 }
 
 .ch-img-1 {
-  background-image: url(../images/img1.jpg);
+  background-image: url(../images/Ad.jpg);
 }
 
 .ch-img-2 {
-  background-image: url(../images/img2.jpg);
+  background-image: url(../images/nan.jpg);
 }
 
 .ch-img-3 {
-  background-image: url(../images/img3.jpg);
+  background-image: url(../images/H.jpg);
 }
 
 .ch-img-4 {
-  background-image: url(../images/img4.jpg);
+  background-image: url(../images/su.jpg);
 }
 
 .ch-info h4 {
@@ -17191,7 +17193,7 @@ button.owl-next {
 
 /*--//contact--*/
 .inner-banner {
-  background: url(../images/banner4.jpg) no-repeat center;
+  background: url(../images/Workforce1.jpg) no-repeat center;
   background-size: cover;
   min-height: 200px;
   position: relative;
